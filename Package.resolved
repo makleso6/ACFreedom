@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AnyCodable",
+        "repositoryURL": "https://github.com/Flight-School/AnyCodable.git",
+        "state": {
+          "branch": null,
+          "revision": "6e9610258e9f1044b5e0d88545052846448b43c3",
+          "version": "0.2.3"
+        }
+      },
+      {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "12d2bf3ec7207ec3cd004b9582f69ef5fae1da3b",
+          "version": "1.0.32"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "40bdad80882d307abe2c0bb36cf3bd4d3e03fe04",
+          "version": "2.16.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
