@@ -1,6 +1,7 @@
 # Xcode
 #
 .build/
+.swiftpm/
 build/
 *.pbxuser
 !default.pbxuser
@@ -18,6 +19,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.xcodeproj
+*.xcodeproj/
 
 # Other
 #
