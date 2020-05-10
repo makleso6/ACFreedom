@@ -17,14 +17,12 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.xcodeproj
 
 # Other
 #
 Pods/
 .idea/
-Crashlytics.framework/*
-Fabric.framework/*
 fastlane/report.xml
 fastlane/README.md
-Edadeal.app.dSYM.zip
 IDEWorkspaceChecks.plist
