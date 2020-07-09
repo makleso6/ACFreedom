@@ -75,14 +75,14 @@ public struct ACDevice: Equatable {
 
 public struct AUXDevice {
     public var id: [UInt8] = .init(repeating: 0, count: 4)
-    public var mac: [UInt8] = [0x34, 0xEA, 0x34, 0x96, 0xE7, 0x05]
-    public var ip: String = "192.168.88.25"
+    public var mac: [UInt8]
+    public var ip: String
     public var key: [UInt8] = Conts.defaultKey
 }
 
 public final class DeviceController: OutboundHandler {
     
-    private var auxDevice: AUXDevice = .init()
+    private var auxDevice: AUXDevice
     public var device: ACDevice = .init() {
         didSet {
             if device != oldValue {

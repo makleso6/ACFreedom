@@ -14,7 +14,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.13.0"),
-        .package(url: "https://github.com/IBM-Swift/BlueCryptor.git", from: "1.0.21"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
         .package(url: "https://github.com/Flight-School/AnyCodable.git", from: "0.2.3")
         // Dependencies declare other packages that this package depends on.
@@ -24,7 +23,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "ACFreedom",
-            dependencies: ["NIO", "Logging", "Cryptor", "AnyCodable", "CryptoSwift"]),
+            dependencies: ["NIO", "Logging", "AnyCodable", "CryptoSwift"]),
         .testTarget(
             name: "ACFreedomTests",
             dependencies: ["ACFreedom"]),
