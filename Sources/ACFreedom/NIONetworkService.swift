@@ -18,7 +18,6 @@ public class NIONetworkService: NetworkService, Logable {
         return channel.localAddress?.port
     }
     
-    
     let group: EventLoopGroup
     let bootstrap: DatagramBootstrap
     let channel: Channel
