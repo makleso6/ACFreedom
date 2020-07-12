@@ -33,9 +33,9 @@ public enum HorizontalFixation: UInt8 {
 }
 
 public enum Fanspeed: UInt8 {
-    case low
-    case medium
-    case high
+    case low = 3
+    case medium = 2
+    case high = 1
 }
 
 public enum Mode: UInt8 {

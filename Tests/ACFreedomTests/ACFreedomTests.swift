@@ -22,7 +22,7 @@ final class ACFreedomTests: XCTestCase {
     
     lazy var deviceController: DeviceController = {
         
-        return DeviceController(networkService: auxNetworkService)
+        return DeviceController(networkService: auxNetworkService, mac: [], ip: "")
     }()
     //        func testExample() {
     //            let date = Date(timeIntervalSince1970: 1592331610)
