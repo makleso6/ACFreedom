@@ -63,8 +63,21 @@ public struct ACDevice: Equatable {
     public var fanspeed: Fanspeed = .medium
     public var verticalFixation: VerticalFixation = .on
     public var horizontalFixation: HorizontalFixation = .on
-    public var turbo: State = .off
-    public var mute: State = .on
+    public var turbo: State = .off {
+        didSet {
+            if turbo == .on {
+                mute = .off
+            }
+        }
+    }
+    
+    public var mute: State = .off {
+        didSet {
+            if mute == .on {
+                turbo = .off
+            }
+        }
+    }
     public var mode: Mode = .cooling
     public var health: State = .off
     public var clean: State = .off
