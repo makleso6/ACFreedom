@@ -28,3 +28,4 @@ Pods/
 fastlane/report.xml
 fastlane/README.md
 IDEWorkspaceChecks.plist
+*.DS_Store

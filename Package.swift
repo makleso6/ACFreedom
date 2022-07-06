@@ -10,7 +10,7 @@ let package = Package(
         .library(
             name: "ACFreedom",
             targets: ["ACFreedom"]),
-        
+        .executable(name: "ACFreedomApp", targets: ["ACFreedomApp"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
@@ -30,6 +30,12 @@ let package = Package(
                 .product(name: "CryptoSwift", package: "swift-log"),
                 .product(name: "Logging", package: "swift-nio"),
                 .product(name: "AnyCodable", package: "AnyCodable"),
+
+            ]),
+        .target(
+            name: "ACFreedomApp",
+            dependencies: [
+                .target(name: "ACFreedom")
 
             ]),
         .testTarget(
